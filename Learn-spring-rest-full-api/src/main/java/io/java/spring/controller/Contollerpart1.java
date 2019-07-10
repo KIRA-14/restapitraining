@@ -8,13 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Contollerpart1 {
 	
-	@RequestMapping(value="/",method =RequestMethod.GET)
-	@ResponseBody
-	String Welcome() {
-		return "Wlencome to spring";
-	}
-	
-	@RequestMapping(value="/hello2", method = RequestMethod.POST )
+	@RequestMapping(value="/hello", method = RequestMethod.GET )
 	@ResponseBody
 	public String satyhello2() {
 		return "Wlencome to spring";
