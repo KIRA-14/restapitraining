@@ -23,13 +23,14 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 				  <dependency>
 				    <groupId>org.springframework.boot</groupId>
 				    <artifactId>spring-boot-starter-web</artifactId>
+					  <exclusions>
+						<exclusion>
+						    <groupId>org.springframework.boot</groupId>
+						    <artifactId>spring-boot-starter-tomcat</artifactId>
+						</exclusion>
+   			 		</exclusions>
 				</dependency>
-			  <exclusions>
-				<exclusion>
-				    <groupId>org.springframework.boot</groupId>
-				    <artifactId>spring-boot-starter-tomcat</artifactId>
-				</exclusion>
-   			 </exclusions>
+			  
 		  </dependencies>
   
   
