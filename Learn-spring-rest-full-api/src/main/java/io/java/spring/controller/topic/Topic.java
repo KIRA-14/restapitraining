@@ -1,12 +1,16 @@
 package io.java.spring.controller.topic;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Topic {
 	
 	private String id;
 	private String name;
 	private String discription;
 	
-	public Topic(String id, String name, String discription) {
+	public Topic(@JsonProperty ("id" ) String id, 
+			@JsonProperty ("name" ) String name, 
+			@JsonProperty ("discription" ) String discription) {
 		super();
 		this.id = id;
 		this.name = name;

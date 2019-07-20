@@ -36,4 +36,45 @@ public class TopicService {
 		
 	}
 
+
+	public void updatetopic(String id, Topic requestbody) {
+		for (int i = 0; i < topics.size(); i++) {
+			Topic  t =  topics.get(i);
+			if(t.getId().equals(id)) {
+				topics.set(i, requestbody);
+				return;
+			}
+		}
+	}
+
+
+	public void deletetopic(String id) {
+		topics.removeIf(t->t.getId().equals(id));
+		
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
